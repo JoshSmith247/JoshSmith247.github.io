@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!--<link rel="stylesheet" type="text/css" href="styling.css">-->
+<style>
+  html {
+  background-color: #ccffcc;
+}
+h1 {
+  text-align: center;
+  font-family: Verdana;
+  background-color: #0074D9;
+}
+img { 
+  width: 50%; 
+  border-radius: 25px;
+}
+form {
+  text-align: center;
+  font-family: Verdana;
+  font-style: oblique;
+  background-color: #0074D9;
+}
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 50%;
+}
+input[type=button] {
+  background-color : #31B0D5;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  border-radius: 5%;
+}
+p {
+  text-align: right;
+  font-size: 4%;
+}
+</style>
+
+<head>
+  <h1><br><br><br>
+  <img src="pixil-frame-0.png" alt="Logo (Loads from html file folder)">
+  <form>
+      <input type="text" size=110% name="gameroom" placeholder="Game Key"><br><br><br><!--Changes url to \gamekey=(input)-->
+  </form>
+  <p>version 1.0</p>
+  </h1>
+</head>
+<body>
+  <form>
+    <input type="button" value="Create Game +" onclick="createGame()">
+  </form>
+  <br><br><br><br>
+  <!--<h2>About:</h2>
+  <p2>This game was created with the intent of making a game that could play an infinite amount of maps and playstyles 
+    based off of pre-created sets.
+  </p2>-->
+</body>
+<script>
+function createGame(){
+  //var fs = require('fs'); //NODE ONLY
+  
+  //var htmlContent = '<html>Test</html>';
+
+  //fs.writeFile('/testpage1.html', htmlContent, 'utf8', (error) => { /* handle error */ });
+  window.location.replace("file:///Users/jwsmith23/Desktop/AdventureWeb/gameroom.html");//+String(Math.floor(Math.random() * 10000)));
+}
+</script>
+</html>
