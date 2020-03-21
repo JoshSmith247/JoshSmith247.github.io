@@ -1,4 +1,3 @@
-[Description here]
 In the end, the game aims to have multiple randomly generated maps with paired campaign setups for an intelligent story mode.
 This would also include singleplayer and multiplayer online rooms with live chat and trading.
 Check on this page for updates and working development previews of the game.
