@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="800px" height="500px"></canvas>
+</body>
+</html>
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
+
+var rotation = 45;
+var playerx = 100;
+var playery = 100;
+
+//
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+}
+//
+
+canvas.addEventListener('mousemove', function(evt) {
+    ctx.fillStyle = "#ade8ff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+//
+    var pos = getMousePos(canvas, evt);
+
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(pos.x, pos.y, 4, 4);
+//
+    targetX = pos.x - playerx;
+    targetY = pos.y - playery;
+    rotation = Math.atan2(targetY, targetX);
+    ctx.translate(playerx + 80/2 , playery + 20/2);
+    ctx.rotate(rotation);
+    ctx.translate(-1*(playerx + 80/2) , -1*(playery + 20/2)); // Middle coordinates
+
+    ctx.fillStyle = 'red';
+    ctx.fillRect(playerx, playery, 80, 20); // X, Y, Width, Height -- Then get middle with maths -- X + Wid. /2, same with other
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+});
+
+
+</script>
