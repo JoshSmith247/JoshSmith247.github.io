@@ -1,9 +1,5 @@
-//alert("TEST");
-var animtext;
+var news = document.getElementById("alertBar");
 
-function startanimation() {	
-	animtext = document.getElementById("description").innerHTML;
-	console.log(animtext);
-};
-
-document.onload = function(){ startanimation() };
+function closeBar() {
+	news.style.opacity = 0;
+}
