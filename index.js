@@ -1,6 +1,7 @@
 //alert("TEST");
+var animtext;
 function startanimation() {	
-	var animtext = document.getElementById("description").innerHTML;
+	animtext = document.getElementById("description").innerHTML;
 };
 
 startanimation();
