@@ -12,5 +12,5 @@ function read_text_file (file) {
 	var file_contents = all_string;
 };
 
-read_text_file("description.txt);
+read_text_file("description.txt");
 console.log(file_contents);
