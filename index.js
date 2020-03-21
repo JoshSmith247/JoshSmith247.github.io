@@ -9,7 +9,8 @@ function read_text_file (file) {
 		};
 		file.close();
 	};	
-	return all_string;
+	var file_contents = all_string;
 };
 
 read_text_file("description.txt);
+console.log(file_contents);
