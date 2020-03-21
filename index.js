@@ -1,16 +1,7 @@
 //alert("TEST");
-function read_text_file (file) {	
-	if(file !=null) {
-		var all_string = "";
-
-		file.open("r");
-		while(!file.eof) { 
-			all_string += (file.readln() + "\n") ;
-		};
-		file.close();
-	};	
-	var file_contents = all_string;
+function startanimation() {	
+	var animtext = document.getElementById("description").innerHTML;
 };
 
-read_text_file("description.txt");
-console.log(file_contents);
+startanimation();
+console.log(animtext);
