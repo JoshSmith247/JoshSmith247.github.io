@@ -6,4 +6,4 @@ function startanimation() {
 	console.log(animtext);
 };
 
-startanimation();
+document.onload = function(){ startanimation() };
