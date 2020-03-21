@@ -1,4 +1,13 @@
 3/20/20 - New update log and page reboot, description updated
-- Sample game chat room base in progress -</tr><br><br>
-- Discord contact for info</tr><br><br>
+3/9/20 - Webpack installed >> [Link Here] <<
+3/5/20 - Grid added to show constant proof of movement
+3/4/20 - "Punching" hand motion added to socket update
+3/3/20 - Game "Shout" created
+       - Socket sendUpdate() updated to increase speed
+3/2/20 - Movement and rotation bugs on scrolling map fixed
+3/1/20 - Retractable side bars update >> [Link Here] <<
+2/25/20 - Player redesign (to current)
+        - Google Drive asset file created
+- Sample game chat room base in progress
+- Discord contact for info
 > PAGE CREATED 12/12/19 <
