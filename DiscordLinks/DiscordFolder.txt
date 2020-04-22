@@ -1,0 +1,2 @@
+- Discord Link Folder -
+Used to link files on discord
